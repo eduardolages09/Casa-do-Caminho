@@ -1,0 +1,610 @@
+{
+ "hero-pergola": {
+  "src": "../../../scripts/hero-ceu.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   3000,
+   1688
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ],
+  "2200": [
+   2200,
+   1238
+  ]
+ },
+ "alpendre-aberto": {
+  "src": "../../../scripts/alpendre-sem-fio.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   3168,
+   1344
+  ],
+  "1400": [
+   1400,
+   594
+  ],
+  "800": [
+   800,
+   339
+  ],
+  "2200": [
+   2200,
+   933
+  ]
+ },
+ "pergola-sol": {
+  "src": "../../../scripts/pergola-referencia-sem-deposito.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   3168,
+   1344
+  ],
+  "1400": [
+   1400,
+   594
+  ],
+  "800": [
+   800,
+   339
+  ],
+  "2200": [
+   2200,
+   933
+  ]
+ },
+ "hero-casa": {
+  "src": "exterior/fachada-02.jpg",
+  "receita": {},
+  "full": [
+   1763,
+   1935
+  ],
+  "1400": [
+   1400,
+   1537
+  ],
+  "800": [
+   800,
+   878
+  ]
+ },
+ "granito-potes": {
+  "src": "exterior/detalhe-01.jpg",
+  "receita": {},
+  "full": [
+   2400,
+   1898
+  ],
+  "1400": [
+   1400,
+   1107
+  ],
+  "800": [
+   800,
+   633
+  ]
+ },
+ "alpendre": {
+  "src": "exterior/alpendre-01.jpg",
+  "receita": {
+   "sombras": 0.3
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "muros-escadas": {
+  "src": "exterior/fachada-04.jpg",
+  "receita": {},
+  "full": [
+   1983,
+   1935
+  ],
+  "1400": [
+   1400,
+   1366
+  ],
+  "800": [
+   800,
+   781
+  ]
+ },
+ "praia-ossela": {
+  "src": "../../../fotos-terceiros/praia-pedregulhal-cmoaz.jpg",
+  "receita": {
+   "ruido": 3
+  },
+  "full": [
+   1020,
+   765
+  ],
+  "1400": [
+   1020,
+   765
+  ],
+  "800": [
+   800,
+   600
+  ]
+ },
+ "moinhos-ul": {
+  "src": "../../../fotos-livres/moinhos-ul.jpg",
+  "receita": {},
+  "full": [
+   2400,
+   1528
+  ],
+  "1400": [
+   1400,
+   891
+  ],
+  "800": [
+   800,
+   509
+  ]
+ },
+ "serra-freita": {
+  "src": "../../../fotos-livres/vale-caima-freita.jpg",
+  "receita": {},
+  "full": [
+   2048,
+   873
+  ],
+  "1400": [
+   1400,
+   597
+  ],
+  "800": [
+   800,
+   341
+  ]
+ },
+ "escadas-granito": {
+  "src": "../../../scripts/fachada-01-sem-fio.jpg",
+  "receita": {},
+  "full": [
+   2400,
+   1792
+  ],
+  "1400": [
+   1400,
+   1045
+  ],
+  "800": [
+   800,
+   597
+  ]
+ },
+ "mesa-posta": {
+  "src": "../../../scripts/mesa-referencia.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   896,
+   1195
+  ],
+  "1400": [
+   896,
+   1195
+  ],
+  "800": [
+   800,
+   1067
+  ]
+ },
+ "chegada": {
+  "src": "../../../scripts/chegada-referencia.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   1792,
+   2390
+  ],
+  "1400": [
+   1400,
+   1867
+  ],
+  "800": [
+   800,
+   1067
+  ]
+ },
+ "janela-granito": {
+  "src": "interior/quarto-03.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   1547,
+   1935
+  ],
+  "1400": [
+   1400,
+   1751
+  ],
+  "800": [
+   800,
+   1001
+  ]
+ },
+ "quarto-portadas": {
+  "src": "interior/quarto-03.jpg#2",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1792
+  ],
+  "1400": [
+   1400,
+   1045
+  ],
+  "800": [
+   800,
+   597
+  ]
+ },
+ "quarto-luz": {
+  "src": "../../../scripts/quarto-referencia.jpg",
+  "receita": {
+   "ruido": 0,
+   "clahe": 0,
+   "vibra": 0
+  },
+  "full": [
+   2752,
+   1536
+  ],
+  "1400": [
+   1400,
+   781
+  ],
+  "800": [
+   800,
+   447
+  ],
+  "2200": [
+   2200,
+   1228
+  ]
+ },
+ "quarto-flores": {
+  "src": "interior/quarto-01.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1856
+  ],
+  "1400": [
+   1400,
+   1083
+  ],
+  "800": [
+   800,
+   619
+  ]
+ },
+ "quarto-roupeiro": {
+  "src": "interior/quarto-06.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1800
+  ],
+  "1400": [
+   1400,
+   1050
+  ],
+  "800": [
+   800,
+   600
+  ]
+ },
+ "quarto-terraco": {
+  "src": "interior/quarto-14.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "quarto-pedra": {
+  "src": "interior/quarto-11.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "quarto-janelas": {
+  "src": "interior/quarto-12.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "quarto-claro": {
+  "src": "interior/quarto-09.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "sala-jantar": {
+  "src": "interior/refeicoes-01.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1792
+  ],
+  "1400": [
+   1400,
+   1045
+  ],
+  "800": [
+   800,
+   597
+  ]
+ },
+ "sala-estar": {
+  "src": "interior/sala-02.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "sala-sofa": {
+  "src": "interior/sala-01.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "sala-cozinha": {
+  "src": "interior/refeicoes-02.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1792
+  ],
+  "1400": [
+   1400,
+   1045
+  ],
+  "800": [
+   800,
+   597
+  ]
+ },
+ "cozinha": {
+  "src": "interior/cozinha-01.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "wc-pedra": {
+  "src": "interior/casa-de-banho-04.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "wc-duche": {
+  "src": "interior/casa-de-banho-03.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1350
+  ],
+  "1400": [
+   1400,
+   788
+  ],
+  "800": [
+   800,
+   450
+  ]
+ },
+ "wc-madeira": {
+  "src": "interior/casa-de-banho-01.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   2400,
+   1792
+  ],
+  "1400": [
+   1400,
+   1045
+  ],
+  "800": [
+   800,
+   597
+  ]
+ },
+ "wc-espelho": {
+  "src": "interior/casa-de-banho-02.jpg",
+  "receita": {
+   "clahe": 1.2,
+   "mistura": 0.4,
+   "vibra": 0.06
+  },
+  "full": [
+   1792,
+   2400
+  ],
+  "1400": [
+   1400,
+   1875
+  ],
+  "800": [
+   800,
+   1071
+  ]
+ }
+}

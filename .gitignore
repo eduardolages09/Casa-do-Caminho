@@ -1,0 +1,27 @@
+# Material de trabalho que não vai para o repositório (é público):
+# o dossiê tem reviews com nomes de hóspedes e fotos recolhidas das
+# plataformas; o arquivo guarda a versão 1 do site. O site só usa as
+# cópias preparadas que estão em site/assets/.
+dossie/
+arquivo/
+
+# Originais das fotos da região: as de fotos-terceiros não têm licença
+# livre. Ficam só os créditos.
+fotos-livres/*
+!fotos-livres/CREDITOS.md
+fotos-terceiros/*
+!fotos-terceiros/CREDITOS.md
+
+# gerado pelos scripts (fotos retocadas a partir das do Booking e dados
+# do OpenStreetMap, que o mapa_dados.py volta a descarregar)
+scripts/*.jpg
+scripts/mapa-dados/
+scripts/__pycache__/
+
+# sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# propostas comerciais (preços e contactos): não vão para o repositório público
+proposta/
