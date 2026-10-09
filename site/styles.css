@@ -596,6 +596,20 @@ html:not(.js) [data-fundo="granito"] { background: var(--granito); }
 .cta-fixo.is-visivel { transform: none; }
 @media (max-width: 760px) { .cta-fixo { display: flex; } }
 
+/* Ao toque, cada link tem pelo menos 44 px de altura para o dedo. Os soltos
+   ganham uma área invisível à volta (o desenho não mexe); os do rodapé, que
+   estão empilhados a 4 px uns dos outros, ganham altura de verdade, senão a
+   área de um cairia em cima do outro. */
+@media (pointer: coarse) {
+  .link-seta, .reservar__outros a, .lugar__credito a, .mapa__credito a, .rodape__fim a { position: relative; }
+  .link-seta::before, .reservar__outros a::before, .lugar__credito a::before, .mapa__credito a::before, .rodape__fim a::before {
+    content: ""; position: absolute; left: -4px; right: -4px; top: 50%; height: 44px; transform: translateY(-50%);
+  }
+  .rodape__contacto { gap: 0; }
+  .rodape__redes { row-gap: 0; }
+  .rodape__contacto a, .rodape__redes a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
 /* ============================================================
    VISOR
    ============================================================ */

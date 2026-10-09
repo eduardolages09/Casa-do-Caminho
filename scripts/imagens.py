@@ -118,6 +118,17 @@ INTEIRAS = {'hero-pergola', 'alpendre-aberto', 'pergola-sol', 'quarto-luz'}     
 # as fotos em ecrã inteiro (o hero, a foto do fim, a que cresce e a abertura
 # do Interior) ganham também 2200 px e AVIF
 AVIF = {'hero-pergola', 'pergola-sol', 'alpendre-aberto', 'quarto-luz'}
+# No telemóvel ao alto, o hero e a foto que cresce mostram só uma fatia do
+# meio da foto, mas o browser pedia a foto inteira (3168 px, ~600 KB). Estas
+# ganham um recorte vertical, -vertical.jpg/.avif, que o site serve a ecrãs
+# estreitos (<source media> no index.html). Para o que se vê ficar igual, o
+# recorte começa em pos × (largura − recorte), com pos = o object-position
+# horizontal do styles.css nesse ecrã (hero 57 %, cresce 60 %): se um mudar,
+# muda o outro. nome: (largura/altura do recorte, pos)
+VERTICAIS = {'pergola-sol': (3 / 4, 0.57), 'alpendre-aberto': (1.0, 0.60)}
+# folhagem e água miúdas pesam muito em JPEG: os moinhos de Ul a 82/80
+# davam 460 KB a 1400 px. Qualidade própria para todos os tamanhos.
+QUALIDADE = {'moinhos-ul': 72}
 
 
 def trata(bgr, ruido=4, clahe=1.4, mistura=0.55, sombras=0.0, vibra=0.10):
@@ -173,13 +184,23 @@ for src, (nome, rec, receita) in MAP.items():
         bgr = cv2.resize(bgr, (round(w * 2400 / max(h, w)), round(h * 2400 / max(h, w))), interpolation=cv2.INTER_AREA)
     pequena = bgr.shape[1] < 1000
     grande = afia(bgr, 0.8, 0.30)
-    grava(grande, f'{DST}{nome}.jpg', 84 if pequena else 82)
+    q = QUALIDADE.get(nome)
+    grava(grande, f'{DST}{nome}.jpg', q or (84 if pequena else 82))
     tam = {'full': (grande.shape[1], grande.shape[0])}
+    if nome in VERTICAIS:
+        prop, pos = VERTICAIS[nome]
+        H, W = grande.shape[:2]
+        cw = round(H * prop)
+        x = round(pos * (W - cw))
+        v = np.ascontiguousarray(grande[:, x:x + cw])
+        grava(v, f'{DST}{nome}-vertical.jpg', 82)
+        Image.fromarray(cv2.cvtColor(v, cv2.COLOR_BGR2RGB)).save(f'{DST}{nome}-vertical.avif', quality=62)
+        tam['vertical'] = (cw, H)
     # as fotos pequenas (768 px) também ganham -800 e -1400, iguais ao
     # original, para o site poder pedir sempre os mesmos nomes
     for s, (raio, quanto) in ((1400, (0.7, 0.45)), (800, (0.6, 0.5))) + (((2200, (0.75, 0.4)),) if nome in AVIF else ()):
         c = grande if bgr.shape[1] <= s else afia(reduz(bgr, s), raio, quanto)
-        grava(c, f'{DST}{nome}-{s}.jpg', 88 if pequena else 80)
+        grava(c, f'{DST}{nome}-{s}.jpg', q or (88 if pequena else 80))
         tam[s] = (c.shape[1], c.shape[0])
     if nome in GRANDES:
         L = GRANDES[nome]

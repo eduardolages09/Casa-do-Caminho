@@ -25,8 +25,10 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Marcellus&family=Manrope:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Marcellus&family=Manrope:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Marcellus&family=Manrope:wght@300;400;500;600&display=swap"></noscript>
-<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="assets/img/pergola-sol-800.avif 800w, assets/img/pergola-sol-1400.avif 1400w, assets/img/pergola-sol-2200.avif 2200w, assets/img/pergola-sol.avif 3168w" imagesizes="(orientation: portrait) 236svh, 100vw">
-<link rel="stylesheet" href="styles.css?v=17">
+<!-- o telemóvel ao alto pede o recorte vertical (scripts/imagens.py, VERTICAIS); o resto, a foto inteira -->
+<link rel="preload" as="image" type="image/avif" fetchpriority="high" href="assets/img/pergola-sol-vertical.avif" media="(max-aspect-ratio: 3/4)">
+<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="assets/img/pergola-sol-800.avif 800w, assets/img/pergola-sol-1400.avif 1400w, assets/img/pergola-sol-2200.avif 2200w, assets/img/pergola-sol.avif 3168w" imagesizes="(orientation: portrait) 236svh, 100vw" media="not all and (max-aspect-ratio: 3/4)">
+<link rel="stylesheet" href="styles.css?v=18">
 <script>document.documentElement.classList.add('js');</script>
 
 <!-- SEO local. Só factos «afirmar» do contrato do dossiê (site-pronto.md):
@@ -106,6 +108,8 @@
   <section class="hero" id="inicio" aria-label="Boas-vindas">
     <div class="hero__media">
       <picture>
+        <source media="(max-aspect-ratio: 3/4)" type="image/avif" srcset="assets/img/pergola-sol-vertical.avif">
+        <source media="(max-aspect-ratio: 3/4)" srcset="assets/img/pergola-sol-vertical.jpg">
         <source type="image/avif" srcset="assets/img/pergola-sol-800.avif 800w, assets/img/pergola-sol-1400.avif 1400w, assets/img/pergola-sol-2200.avif 2200w, assets/img/pergola-sol.avif 3168w" sizes="(orientation: portrait) 236svh, 100vw">
         <img src="assets/img/pergola-sol-1400.jpg" alt="A pérgola de madeira ao sol, sobre o terraço de granito, à porta dos quartos da casa de pedra" width="3168" height="1344"
           srcset="assets/img/pergola-sol-800.jpg 800w, assets/img/pergola-sol-1400.jpg 1400w, assets/img/pergola-sol-2200.jpg 2200w, assets/img/pergola-sol.jpg 3168w" sizes="(orientation: portrait) 236svh, 100vw" fetchpriority="high">
@@ -181,6 +185,9 @@
         <h2 class="cresce__titulo"><span>Ao ar</span> <span><em>livre</em></span></h2>
         <div class="cresce__moldura">
           <picture>
+            <!-- ao alto, o recorte vertical (quadrado: a moldura começa mais larga do que o ecrã) -->
+            <source media="(max-aspect-ratio: 3/5)" type="image/avif" srcset="assets/img/alpendre-aberto-vertical.avif">
+            <source media="(max-aspect-ratio: 3/5)" srcset="assets/img/alpendre-aberto-vertical.jpg">
             <source type="image/avif" srcset="assets/img/alpendre-aberto-800.avif 800w, assets/img/alpendre-aberto-1400.avif 1400w, assets/img/alpendre-aberto-2200.avif 2200w, assets/img/alpendre-aberto.avif 3168w" sizes="(orientation: portrait) 236svh, 100vw">
             <img src="assets/img/alpendre-aberto-1400.jpg" alt="O alpendre coberto, entre paredes de granito: a mesa de madeira, a churrasqueira e, lá fora, o vale verde" loading="lazy" width="3168" height="1344"
               srcset="assets/img/alpendre-aberto-800.jpg 800w, assets/img/alpendre-aberto-1400.jpg 1400w, assets/img/alpendre-aberto-2200.jpg 2200w, assets/img/alpendre-aberto.jpg 3168w" sizes="(orientation: portrait) 236svh, 100vw" decoding="async">
